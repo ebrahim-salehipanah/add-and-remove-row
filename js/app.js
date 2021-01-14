@@ -21,7 +21,7 @@ $(document).ready(() => {
 		$("tr").hover(
 			function () {
 				$(this).css({ "font-size": "22px", background: " #4e4e4e" });
-				$(this).stop(true).animate({ height: "40px" });
+				$(this).stop(true).animate({ height: "40px" }); //prevent play in mouse leave event
 			},
 			function () {
 				$(this).css({ "font-size": "22px", background: "" }); //"" -> return to default style (style.css)
