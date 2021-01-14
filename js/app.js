@@ -1,21 +1,21 @@
 $(document).ready(() => {
 	$("#add-row").click(function (event) {
-		var fName = $("#fName").val();
-		var lName = $("#lName").val();
+		var left = $("#left").val();
+		var right = $("#right").val();
 
 		event.preventDefault(); //prevent refresh page
 
-		if (fName !== "" && lName !== "" && fName !== null && lName !== null) {
+		if (left !== "" && right !== "" && left !== null && right !== null) {
 			var table = $("#table");
 			// var tableContent = table.innerHTML;
 			var tr = document.createElement("tr");
-			tr.innerHTML = `<td> ${fName} </td><td> ${lName} </td>`;
+			tr.innerHTML = `<td> ${left} </td><td> ${right} </td>`;
 			tr.addEventListener("dblclick", function () {
 				this.remove();
 			});
 			table.append(tr);
-			$("#fName").val("");
-			$("#lName").val("");
+			$("#left").val("");
+			$("#right").val("");
 		}
 	});
 });
