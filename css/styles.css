@@ -10,9 +10,6 @@ body {
 	font-family: "Courier New", Courier, monospace;
 }
 
-tbody tr:hover {
-	background-color: #e7e7e7;
-}
 td,
 th {
 	border: 1px solid #dddddd;

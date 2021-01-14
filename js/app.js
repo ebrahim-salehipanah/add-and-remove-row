@@ -17,5 +17,16 @@ $(document).ready(() => {
 			$("#left").val("");
 			$("#right").val("");
 		}
+
+		$("tr").hover(
+			function () {
+				$(this).css({ "font-size": "22px", background: " #4e4e4e" });
+				$(this).stop(true).animate({ height: "40px" });
+			},
+			function () {
+				$(this).css({ "font-size": "22px", background: "" }); //"" -> return to default style (style.css)
+				$(this).animate({ height: "" }); //"" -> return to default style (style.css)
+			}
+		);
 	});
 });
